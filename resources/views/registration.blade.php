@@ -1,7 +1,6 @@
 @extends('head')
 
-@section('registration')
-    <body class="login-page">
+@section('content')
     <main>
         <div class="login-block">
             <h1>Давайте познакомимся</h1>
@@ -48,6 +47,4 @@
             <p class="text-center">Есть аккаунт? <a class="txt-brand" href="/"><font color=#29aafe>Войти</font></a></p>
         </div>
     </main>
-
-    </body>
 @endsection

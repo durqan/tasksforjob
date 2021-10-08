@@ -16,4 +16,9 @@ class messages extends Model
     {
         return $this->hasOne(users::class,'id','recipient_id');
     }
+
+    public function section()
+    {
+        return $this->hasOne(sections::class, 'id', 'section_id');
+    }
 }

@@ -21,4 +21,21 @@ $(function () {
             }
         });
     });
+
+    $('#send_message').on('click', function (e) {
+        e.preventDefault();
+
+        let head = $('#head').val();
+        let body = $('#body').val();
+        let recipient_id = $('#recipient_id option:selected').attr('data-id');
+        let section = $('#section option:selected').attr('data-id');
+
+        $.ajax({
+            url: '/send_message',
+            data: {head: head, body: body, recipient_id: recipient_id, section: section},
+            success: function (suc) {
+                window.location.replace("/personal_page");
+            }
+        });
+    })
 });

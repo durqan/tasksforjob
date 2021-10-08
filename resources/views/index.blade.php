@@ -1,7 +1,6 @@
 @extends ('head')
 
-@section('authorizate')
-    <body class="login-page">
+@section('content')
     <main>
         <div class="login-block">
             <h1>Введите свои данные</h1>
@@ -33,6 +32,4 @@
         </div>
 
     </main>
-
-    </body>
 @endsection

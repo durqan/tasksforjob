@@ -51,3 +51,18 @@ select
     width: 40% !important;
     margin: 0 auto;
 }
+
+a
+{
+    opacity: 0.8;
+}
+.collapse:hover
+{
+    background-color: #29aafe;
+}
+
+.collapse
+{
+    background: white;
+    transition: 1s;
+}

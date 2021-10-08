@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="/public/styles.css">
     <script src="/public/scr.js"></script>
 </head>
-<body>
-@yield('authorizate')
-@yield('registration')
-@yield('personal_page')
-@yield('posts')
-@yield('post_add')
+<body class="login-page">
+@yield('content')
 </body>
 </html>

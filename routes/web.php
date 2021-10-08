@@ -21,3 +21,5 @@ Route::get('/authorizate', [MyControl::class, 'authorizate']);
 Route::get('/personal_page', [MyControl::class, 'personal_page']);
 Route::get('/posts', [MyControl::class, 'posts']);
 Route::get('/post_add', [MyControl::class, 'post_add']);
+Route::get('/send_message', [MyControl::class, 'send_message']);
+Route::get('/message/{id}', [MyControl::class, 'message']);

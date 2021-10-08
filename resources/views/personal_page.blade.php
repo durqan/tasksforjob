@@ -1,7 +1,6 @@
 @extends('head')
 
-@section('personal_page')
-    <body class="login-page">
+@section('content')
     <main>
         <div class="login-block">
             <h1>Ваши данные</h1>
@@ -35,10 +34,18 @@
                 </div>
             </div>
             <br>
-            <a href="/posts"><input class="btn btn-primary btn-block" value="СООБЩЕНИЯ"></a>
-            <br>
+            @if(empty($auth_check))
+                <div class="form-group">
+                    <div class="input-group">
+                        <span>*Вы сможете отправлять сообщения после прохождения модерации</span>
+                    </div>
+                </div>
+                <br>
+            @else
+                <a href="/posts"><input class="btn btn-primary btn-block" value="СООБЩЕНИЯ"></a>
+                <br>
+            @endif
             <a href="/"><input class="btn btn-primary btn-block" value="НА ГЛАВНУЮ"></a>
         </div>
     </main>
-    </body>
 @endsection
